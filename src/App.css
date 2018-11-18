@@ -1,0 +1,215 @@
+/* ================================= 
+  Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em/1.5 "Roboto", sans-serif;
+  color: #4c4c4c;
+  background: #f6f7f7;
+  padding-top: 145px;
+  padding-bottom: 3em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 280px;
+  height: 250px;
+  border: 5px solid darkgrey;
+}
+
+img:hover {
+  border: 5px solid limegreen;
+}
+input {
+  font-size: 1.12em;
+  height: 46px;
+  padding-bottom: 1em;
+  padding-left: 0;
+  background: none;
+  border: none;
+  outline: 0;
+  border-bottom: 4px solid #e4e4e4;
+  transition: border-color 0.4s;
+}
+
+input:focus {
+  border-color: #c1c1c1;
+}
+
+button {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  z-index: 2000;
+}
+
+/* ================================= 
+  Page Components
+==================================== */
+.App {
+  padding: 0 25px;
+  max-width: 1100px;
+}
+
+.main-title {
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+}
+
+.search-form input:only-of-type {
+  width: 100%;
+  margin-right: -40px;
+  padding-right: 35px;
+}
+
+.search-button {
+  float: right;
+  margin-right: -10px;
+}
+
+.no-results {
+  color: #7bcbc4;
+  height: 140px;
+  padding-top: 62px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+
+
+/* ================================= 
+  Layout Styles
+==================================== */
+.photo-list {
+  display: block;
+}
+
+.photo-list li {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+.main-nav li,.main-nav a,.main-nav ul {
+display: inline-flex;
+justify-content: center;
+width: 33%;
+margin-top: 18px;
+margin-bottom: 18px;
+list-style: none;
+}
+
+.main-nav ul, .main-nav{
+  padding: 0;
+}
+
+.main-nav a {
+font-size: 16px;
+color: white;
+width: 80%;
+padding: 2px;
+background: rgb(93, 176, 231);
+border-radius: 10px;
+margin-left: 10px;
+}
+
+.main-nav a:hover {
+  font-size: 16px;
+  color: rgb(75, 73, 73);
+  }
+
+.active {
+  color: #e7945d !important;
+}
+
+
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 115px;
+  }
+    .search-form {
+    width: 422px;
+    margin: 0 auto;
+    margin-top: 34px;
+  }
+
+  .main-nav li,.main-nav a,.main-nav ul {
+    display: inline-flex;
+    justify-content: center;
+    width: 33%;
+    margin-top: 20px;
+    padding: 8 0px;
+    list-style: none;
+    }
+    
+    .main-nav a {
+      font-size: 20px;
+      color: white;
+      width: 50%;
+      background: rgb(93, 176, 231);
+      border-radius: 10px;
+      }
+
+      .main-nav a:hover {
+        font-size: 20px;
+        color: rgb(75, 73, 73);
+        }
+
+    .main-title {
+      font-size: 2em;
+      line-height: 80px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    img {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 250px;
+      height: 200px;
+    }
+}
