@@ -2,7 +2,7 @@ import React from 'react';
 
 const NotFound = () => (
   <div className="main-content not-found">
-    <i className="fas fa-frown-o">error</i>
+    <i className="far fa-frown fa-5x"></i>
     <h2>Sorry, Page Not Found</h2>
   </div>
 );

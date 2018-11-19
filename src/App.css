@@ -108,8 +108,6 @@ button {
 }
 
 .photo-list li {
-  display: block;
-  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -146,7 +144,7 @@ margin-left: 10px;
   }
 
 .active {
-  color: #e7945d !important;
+  background-color: #e7945d !important;
 }
 
 
@@ -165,6 +163,17 @@ margin-left: 10px;
   Media Queries
 ==================================== */
 
+
+
+@media (min-width: 420px) {
+.photo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+}
 @media (min-width: 768px) {
   body {
     padding-top: 115px;
@@ -204,12 +213,19 @@ margin-left: 10px;
       letter-spacing: 1px;
       margin: 0;
     }
-    img {
+    .photo-list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 250px;
-      height: 200px;
+    }
+
+.photo-list li {
+    margin: 0 auto;
+    text-align: center;
+}
+    img {
+      width: 300px;
+      height: 300px;
     }
 }
