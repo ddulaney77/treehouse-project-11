@@ -90,7 +90,7 @@ button {
   margin-right: -10px;
 }
 
-.no-results {
+.no-results, .not-found {
   color: #7bcbc4;
   height: 140px;
   padding-top: 62px;
