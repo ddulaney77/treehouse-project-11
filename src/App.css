@@ -67,7 +67,7 @@ button {
 ==================================== */
 .App {
   padding: 0 25px;
-  max-width: 1100px;
+  max-width: 1400px;
 }
 
 .main-title {
@@ -188,8 +188,8 @@ margin-left: 10px;
     display: inline-flex;
     justify-content: center;
     width: 33%;
-    margin-top: 20px;
-    padding: 8 0px;
+    margin: 20px 0;
+    padding: 8px;
     list-style: none;
     }
     
@@ -218,6 +218,7 @@ margin-left: 10px;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin:auto;
     }
 
 .photo-list li {

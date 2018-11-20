@@ -34,7 +34,7 @@ export default class Search extends Component {
             ref={input => this.query = input}
             placeholder="Search..."
             autoComplete='off' />
-          <button type="submit" id="submit" className="search-button"><i className="fas fa-search"></i></button>
+          <button type="submit" id="submit" className="search-button"><i className="fas fa-search fa-2x"></i></button>
         </form>
       </div>
     );
